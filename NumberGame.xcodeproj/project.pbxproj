@@ -16,6 +16,7 @@
 		D9BA307828D9A9A600CEDEF6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9BA307728D9A9A600CEDEF6 /* SnapKit */; };
 		D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */; };
 		D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */; };
+		D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D9BA307428D9A90600CEDEF6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberView.swift; sourceTree = "<group>"; };
 		D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
+		D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				D9BA307C28D9BBB700CEDEF6 /* StartScene */,
 				D9BA307D28D9BBC900CEDEF6 /* EnterNumberScene */,
 				D9BA307228D8794100CEDEF6 /* Resources */,
+				D9BA308228D9D00C00CEDEF6 /* Extensions */,
 			);
 			path = NumberGame;
 			sourceTree = "<group>";
@@ -137,6 +140,22 @@
 				D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9BA308228D9D00C00CEDEF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308328D9D05D00CEDEF6 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9BA308328D9D05D00CEDEF6 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +236,7 @@
 			files = (
 				D9BA306228D8778D00CEDEF6 /* MainViewController.swift in Sources */,
 				D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */,
+				D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */,
 				D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */,
 				D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */,
 				D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */,
