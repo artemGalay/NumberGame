@@ -19,12 +19,11 @@ class MainView: UIView {
         return label
     }()
 
-    private lazy var startButton: UIButton = {
+    lazy var startButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Start New Game", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 15
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button.backgroundColor = .blue
         return button
     }()
@@ -60,7 +59,8 @@ class MainView: UIView {
         }
     }
 
-    @objc private func buttonTapped() {
-        
-    }
+//    @objc func buttonTapped() {
+////        let navigator = UINavigationController(rootViewController: MainViewController())
+////        navigator.pushViewController(EnterNumberViewController(), animated: true)
+//    }
 }
