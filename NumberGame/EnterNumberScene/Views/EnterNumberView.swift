@@ -11,17 +11,16 @@ class EnterNumberView: UIView {
 
     private lazy var numberTexfield: UITextField = {
         let textfield = UITextField()
+        textfield.textColor = .black
+        textfield.textAlignment = .center
+        textfield.placeholder = "Guess the number"
+        textfield.layer.borderWidth = 1
+        textfield.layer.cornerRadius = 5
+        textfield.layer.borderColor = UIColor.separator.cgColor
         return textfield
     }()
 
-    lazy var enterNumberButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Enter the Number", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 15
-        button.backgroundColor = .blue
-        return button
-    }()
+    lazy var enterNumberButton = UIButton(text: "Enter the Number")
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -42,8 +41,9 @@ class EnterNumberView: UIView {
     private func setupLayout() {
         numberTexfield.snp.makeConstraints {
             $0.centerX.equalToSuperview()
-            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(40)
+            $0.top.equalTo(safeAreaLayoutGuide.snp.top).offset(80)
             $0.width.equalTo(360)
+            $0.height.equalTo(30)
         }
 
         enterNumberButton.snp.makeConstraints {

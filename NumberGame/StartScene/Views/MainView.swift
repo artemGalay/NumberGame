@@ -19,14 +19,7 @@ class MainView: UIView {
         return label
     }()
 
-    lazy var startButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Start New Game", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 15
-        button.backgroundColor = .blue
-        return button
-    }()
+    lazy var startButton = UIButton(text: "Start New Game")
 
     override init(frame: CGRect) {
         super.init(frame: frame)
