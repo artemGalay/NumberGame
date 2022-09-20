@@ -14,6 +14,8 @@
 		D9BA306A28D8778E00CEDEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BA306828D8778E00CEDEF6 /* LaunchScreen.storyboard */; };
 		D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA307428D9A90600CEDEF6 /* MainView.swift */; };
 		D9BA307828D9A9A600CEDEF6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9BA307728D9A9A600CEDEF6 /* SnapKit */; };
+		D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */; };
+		D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		D9BA306928D8778E00CEDEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9BA306B28D8778E00CEDEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9BA307428D9A90600CEDEF6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberView.swift; sourceTree = "<group>"; };
+		D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				D9BA307128D8793800CEDEF6 /* App */,
-				D9BA307328D9A8E400CEDEF6 /* Views */,
-				D9BA306128D8778D00CEDEF6 /* MainViewController.swift */,
+				D9BA307C28D9BBB700CEDEF6 /* StartScene */,
+				D9BA307D28D9BBC900CEDEF6 /* EnterNumberScene */,
 				D9BA307228D8794100CEDEF6 /* Resources */,
 			);
 			path = NumberGame;
@@ -91,6 +95,48 @@
 				D9BA307428D9A90600CEDEF6 /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D9BA307928D9B5BE00CEDEF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA306128D8778D00CEDEF6 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9BA307C28D9BBB700CEDEF6 /* StartScene */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA307328D9A8E400CEDEF6 /* Views */,
+				D9BA307928D9B5BE00CEDEF6 /* Controllers */,
+			);
+			path = StartScene;
+			sourceTree = "<group>";
+		};
+		D9BA307D28D9BBC900CEDEF6 /* EnterNumberScene */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA307E28D9BBD800CEDEF6 /* Views */,
+				D9BA307F28D9BBDD00CEDEF6 /* Controllers */,
+			);
+			path = EnterNumberScene;
+			sourceTree = "<group>";
+		};
+		D9BA307E28D9BBD800CEDEF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D9BA307F28D9BBDD00CEDEF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +216,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9BA306228D8778D00CEDEF6 /* MainViewController.swift in Sources */,
+				D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */,
+				D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */,
 				D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */,
 				D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */,
 				D9BA306028D8778D00CEDEF6 /* SceneDelegate.swift in Sources */,
