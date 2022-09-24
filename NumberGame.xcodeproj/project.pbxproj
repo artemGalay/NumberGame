@@ -17,6 +17,8 @@
 		D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */; };
 		D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */; };
 		D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */; };
+		D9BA308928DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308828DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift */; };
+		D9BA308D28DF375500CEDEF6 /* ComputerIsGuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308C28DF375500CEDEF6 /* ComputerIsGuessingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		D9BA307A28D9B5DD00CEDEF6 /* EnterNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberView.swift; sourceTree = "<group>"; };
 		D9BA308028D9BC0E00CEDEF6 /* EnterNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNumberViewController.swift; sourceTree = "<group>"; };
 		D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extensions.swift"; sourceTree = "<group>"; };
+		D9BA308828DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGuessingViewController.swift; sourceTree = "<group>"; };
+		D9BA308C28DF375500CEDEF6 /* ComputerIsGuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGuessingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +69,9 @@
 			isa = PBXGroup;
 			children = (
 				D9BA307128D8793800CEDEF6 /* App */,
-				D9BA307C28D9BBB700CEDEF6 /* StartScene */,
-				D9BA307D28D9BBC900CEDEF6 /* EnterNumberScene */,
+				D9BA307C28D9BBB700CEDEF6 /* Start */,
+				D9BA307D28D9BBC900CEDEF6 /* EnterNumber */,
+				D9BA308728DF364600CEDEF6 /* ComputerIsGuessing */,
 				D9BA307228D8794100CEDEF6 /* Resources */,
 				D9BA308228D9D00C00CEDEF6 /* Extensions */,
 			);
@@ -108,22 +113,22 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		D9BA307C28D9BBB700CEDEF6 /* StartScene */ = {
+		D9BA307C28D9BBB700CEDEF6 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				D9BA307328D9A8E400CEDEF6 /* Views */,
 				D9BA307928D9B5BE00CEDEF6 /* Controllers */,
 			);
-			path = StartScene;
+			path = Start;
 			sourceTree = "<group>";
 		};
-		D9BA307D28D9BBC900CEDEF6 /* EnterNumberScene */ = {
+		D9BA307D28D9BBC900CEDEF6 /* EnterNumber */ = {
 			isa = PBXGroup;
 			children = (
 				D9BA307E28D9BBD800CEDEF6 /* Views */,
 				D9BA307F28D9BBDD00CEDEF6 /* Controllers */,
 			);
-			path = EnterNumberScene;
+			path = EnterNumber;
 			sourceTree = "<group>";
 		};
 		D9BA307E28D9BBD800CEDEF6 /* Views */ = {
@@ -156,6 +161,31 @@
 				D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		D9BA308728DF364600CEDEF6 /* ComputerIsGuessing */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308B28DF373600CEDEF6 /* Views */,
+				D9BA308A28DF372900CEDEF6 /* Controllers */,
+			);
+			path = ComputerIsGuessing;
+			sourceTree = "<group>";
+		};
+		D9BA308A28DF372900CEDEF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308828DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D9BA308B28DF373600CEDEF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA308C28DF375500CEDEF6 /* ComputerIsGuessingView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +267,12 @@
 				D9BA306228D8778D00CEDEF6 /* MainViewController.swift in Sources */,
 				D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */,
 				D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */,
+				D9BA308928DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift in Sources */,
 				D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */,
 				D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */,
 				D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */,
 				D9BA306028D8778D00CEDEF6 /* SceneDelegate.swift in Sources */,
+				D9BA308D28DF375500CEDEF6 /* ComputerIsGuessingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
