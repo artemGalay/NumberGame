@@ -9,7 +9,7 @@ import UIKit
 
 class EnterNumberView: UIView {
 
-    private lazy var numberTexfield: UITextField = {
+    lazy var numberTexfield: UITextField = {
         let textfield = UITextField()
         textfield.textColor = .black
         textfield.textAlignment = .center

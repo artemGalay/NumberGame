@@ -21,6 +21,14 @@ class EnterNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-       
+        startView?.numberTexfield.delegate = self
+    }
+}
+
+extension EnterNumberViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        startView?.enterNumberButton.resignFirstResponder()
+        return true
     }
 }

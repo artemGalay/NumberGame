@@ -51,9 +51,4 @@ class MainView: UIView {
             $0.height.equalTo(45)
         }
     }
-
-//    @objc func buttonTapped() {
-////        let navigator = UINavigationController(rootViewController: MainViewController())
-////        navigator.pushViewController(EnterNumberViewController(), animated: true)
-//    }
 }
