@@ -19,6 +19,7 @@
 		D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */; };
 		D9BA308928DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308828DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift */; };
 		D9BA308D28DF375500CEDEF6 /* ComputerIsGuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308C28DF375500CEDEF6 /* ComputerIsGuessingView.swift */; };
+		D9BA308F28DF3AC200CEDEF6 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA308E28DF3AC200CEDEF6 /* UILabel + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extensions.swift"; sourceTree = "<group>"; };
 		D9BA308828DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGuessingViewController.swift; sourceTree = "<group>"; };
 		D9BA308C28DF375500CEDEF6 /* ComputerIsGuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerIsGuessingView.swift; sourceTree = "<group>"; };
+		D9BA308E28DF3AC200CEDEF6 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				D9BA308428D9D07600CEDEF6 /* UIButton + Extensions.swift */,
+				D9BA308E28DF3AC200CEDEF6 /* UILabel + Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */,
 				D9BA308928DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift in Sources */,
 				D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */,
+				D9BA308F28DF3AC200CEDEF6 /* UILabel + Extensions.swift in Sources */,
 				D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */,
 				D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */,
 				D9BA306028D8778D00CEDEF6 /* SceneDelegate.swift in Sources */,

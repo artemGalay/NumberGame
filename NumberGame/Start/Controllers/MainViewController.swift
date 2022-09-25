@@ -28,4 +28,3 @@ class MainViewController: UIViewController {
         navigationController?.pushViewController(viewcontroller, animated: true)
         }
     }
-
