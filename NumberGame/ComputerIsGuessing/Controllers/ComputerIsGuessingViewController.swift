@@ -16,7 +16,7 @@ class ComputerIsGuessingViewController: UIViewController {
 
     override func loadView() {
         view = ComputerIsGuessingView()
-        tryOne?.startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+//        tryOne?.startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
 
     }
     override func viewDidLoad() {

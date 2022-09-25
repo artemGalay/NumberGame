@@ -20,7 +20,7 @@ class EnterNumberView: UIView {
         return textfield
     }()
 
-    lazy var enterNumberButton = UIButton(text: "Enter the Number")
+    lazy var enterNumberButton = UIButton(downText: "Enter the Number")
 
     override init(frame: CGRect) {
         super.init(frame: frame)

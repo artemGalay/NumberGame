@@ -10,16 +10,9 @@ import SnapKit
 
 class MainView: UIView {
 
-    private lazy var myGameLabel: UILabel = {
-        let label = UILabel()
-        label.text = "My Awesome Game"
-        label.font = .systemFont(ofSize: 24)
-        label.textAlignment = .center
-        label.textColor = .black
-        return label
-    }()
+    private lazy var myGameLabel = UILabel(text: "My Awesome Game")
 
-    lazy var startButton = UIButton(text: "Start New Game")
+    lazy var startButton = UIButton(downText: "Start New Game")
 
     override init(frame: CGRect) {
         super.init(frame: frame)

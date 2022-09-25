@@ -8,11 +8,21 @@
 import UIKit
 
 extension UIButton {
-    convenience init(text: String) {
+    convenience init(downText: String) {
         self.init()
-        setTitle(text, for: .normal)
+        setTitle(downText, for: .normal)
         setTitleColor(.white, for: .normal)
         layer.cornerRadius = 15
         backgroundColor = .blue
+    }
+
+    convenience init(text: String) {
+        self.init()
+        setTitle(text, for: .normal)
+        setTitleColor(.black, for: .normal)
+        backgroundColor = .white
+        layer.cornerRadius = 10
+        layer.borderWidth = 1
+        layer.borderColor = UIColor.black.cgColor
     }
 }
