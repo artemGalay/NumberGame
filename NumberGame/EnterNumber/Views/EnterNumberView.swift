@@ -17,6 +17,10 @@ class EnterNumberView: UIView {
         textfield.layer.borderWidth = 1
         textfield.layer.cornerRadius = 5
         textfield.layer.borderColor = UIColor.separator.cgColor
+        textfield.keyboardType = .numbersAndPunctuation
+        textfield.returnKeyType = .done
+        textfield.textContentType = .emailAddress
+        textfield.clearButtonMode = .always
         return textfield
     }()
 

@@ -9,14 +9,16 @@ import UIKit
 
 class ComputerIsGuessingViewController: UIViewController {
 
-    private var tryOne: ComputerIsGuessingView? {
+    private var tryPerson: ComputerIsGuessingView? {
         guard isViewLoaded else { return nil }
         return view as? ComputerIsGuessingView
     }
 
     override func loadView() {
         view = ComputerIsGuessingView()
-//        tryOne?.startButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        navigationItem.hidesBackButton = true
+        tryPerson?.moreButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        tryPerson?.lessButton.addTarget(self, action: #selector(buttonPassed), for: .touchUpInside)
 
     }
     override func viewDidLoad() {
@@ -24,7 +26,12 @@ class ComputerIsGuessingViewController: UIViewController {
     }
 
     @objc private func buttonTapped() {
-        let viewcontroller = EnterNumberViewController()
-        navigationController?.pushViewController(viewcontroller, animated: true)
-        }
+        tryPerson?.computerNumber = tryPerson!.computerNumber + Int.random(in: 1...15)
+        tryPerson!.youNumberLabel.text = "Your number is - \(tryPerson?.computerNumber ?? 0)?"
     }
+
+    @objc private func buttonPassed() {
+        tryPerson?.computerNumber = tryPerson!.computerNumber - Int.random(in: 1...15)
+        tryPerson!.youNumberLabel.text = "Your number is - \(tryPerson?.computerNumber ?? 0)?"
+    }
+}
