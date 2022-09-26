@@ -10,7 +10,7 @@ import SnapKit
 
 class ComputerIsGuessingView: UIView {
 
-    let computerNumber = Int.random(in: 1...100)
+    var computerNumber = Int.random(in: 1...100)
 
     lazy var tryLabel = UILabel(text: "Try № 1")
     lazy var guessingLabel = UILabel(text: "Computer is guessing")
@@ -18,6 +18,8 @@ class ComputerIsGuessingView: UIView {
     lazy var myNumberLabel = UILabel(text: "My number is...")
 
     lazy var moreButton = UIButton(text: ">")
+    lazy var equallyButton = UIButton(text: "=")
+    lazy var lessButton = UIButton(text: "<")
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,6 +38,8 @@ class ComputerIsGuessingView: UIView {
         addSubview(youNumberLabel)
         addSubview(myNumberLabel)
         addSubview(moreButton)
+        addSubview(equallyButton)
+        addSubview(lessButton)
     }
 
     private func setupLayout() {
@@ -62,8 +66,20 @@ class ComputerIsGuessingView: UIView {
 
         moreButton.snp.makeConstraints {
             $0.top.equalTo(myNumberLabel.snp.bottom).offset(10)
-            $0.leading.equalToSuperview().offset(50)
+            $0.leading.equalToSuperview().offset(130)
             $0.width.height.equalTo(50)
+        }
+
+        equallyButton.snp.makeConstraints {
+            $0.centerY.equalTo(moreButton)
+            $0.width.height.equalTo(50)
+            $0.leading.equalTo(moreButton.snp.trailing).offset(10)
+        }
+
+        lessButton.snp.makeConstraints {
+            $0.centerY.equalTo(equallyButton)
+            $0.width.height.equalTo(50)
+            $0.leading.equalTo(equallyButton.snp.trailing).offset(10)
         }
     }
 }
