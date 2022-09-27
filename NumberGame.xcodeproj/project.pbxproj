@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D921E7A528E3914E00F2AF16 /* PersonIsGuessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921E7A428E3914E00F2AF16 /* PersonIsGuessingView.swift */; };
+		D921E7A728E3915E00F2AF16 /* PersonIsGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921E7A628E3915E00F2AF16 /* PersonIsGuessingViewController.swift */; };
 		D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA305D28D8778D00CEDEF6 /* AppDelegate.swift */; };
 		D9BA306028D8778D00CEDEF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA305F28D8778D00CEDEF6 /* SceneDelegate.swift */; };
 		D9BA306228D8778D00CEDEF6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BA306128D8778D00CEDEF6 /* MainViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D921E7A428E3914E00F2AF16 /* PersonIsGuessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIsGuessingView.swift; sourceTree = "<group>"; };
+		D921E7A628E3915E00F2AF16 /* PersonIsGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonIsGuessingViewController.swift; sourceTree = "<group>"; };
 		D9BA305A28D8778D00CEDEF6 /* NumberGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BA305D28D8778D00CEDEF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BA305F28D8778D00CEDEF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D921E7A328E3911900F2AF16 /* PersonIsGuessing */ = {
+			isa = PBXGroup;
+			children = (
+				D921E7A828E3924500F2AF16 /* Views */,
+				D921E7A928E3925000F2AF16 /* Controllers */,
+			);
+			path = PersonIsGuessing;
+			sourceTree = "<group>";
+		};
+		D921E7A828E3924500F2AF16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D921E7A428E3914E00F2AF16 /* PersonIsGuessingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D921E7A928E3925000F2AF16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D921E7A628E3915E00F2AF16 /* PersonIsGuessingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		D9BA305128D8778D00CEDEF6 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +103,7 @@
 				D9BA307C28D9BBB700CEDEF6 /* Start */,
 				D9BA307D28D9BBC900CEDEF6 /* EnterNumber */,
 				D9BA308728DF364600CEDEF6 /* ComputerIsGuessing */,
+				D921E7A328E3911900F2AF16 /* PersonIsGuessing */,
 				D9BA307228D8794100CEDEF6 /* Resources */,
 				D9BA308228D9D00C00CEDEF6 /* Extensions */,
 			);
@@ -271,7 +301,9 @@
 				D9BA307B28D9B5DD00CEDEF6 /* EnterNumberView.swift in Sources */,
 				D9BA308528D9D07600CEDEF6 /* UIButton + Extensions.swift in Sources */,
 				D9BA308928DF36A100CEDEF6 /* ComputerIsGuessingViewController.swift in Sources */,
+				D921E7A528E3914E00F2AF16 /* PersonIsGuessingView.swift in Sources */,
 				D9BA308128D9BC0E00CEDEF6 /* EnterNumberViewController.swift in Sources */,
+				D921E7A728E3915E00F2AF16 /* PersonIsGuessingViewController.swift in Sources */,
 				D9BA308F28DF3AC200CEDEF6 /* UILabel + Extensions.swift in Sources */,
 				D9BA307528D9A90600CEDEF6 /* MainView.swift in Sources */,
 				D9BA305E28D8778D00CEDEF6 /* AppDelegate.swift in Sources */,

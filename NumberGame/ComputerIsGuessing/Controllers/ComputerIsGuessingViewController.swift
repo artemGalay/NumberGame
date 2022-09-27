@@ -9,7 +9,7 @@ import UIKit
 
 final class ComputerIsGuessingViewController: UIViewController {
 
-    private var tryPerson: ComputerIsGuessingView? {
+    private var tryComputer: ComputerIsGuessingView? {
         guard isViewLoaded else { return nil }
         return view as? ComputerIsGuessingView
     }
@@ -21,24 +21,26 @@ final class ComputerIsGuessingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
-        tryPerson?.moreButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        tryPerson?.lessButton.addTarget(self, action: #selector(buttonPassed), for: .touchUpInside)
-        tryPerson?.equallyButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        tryComputer?.moreButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        tryComputer?.lessButton.addTarget(self, action: #selector(buttonPassed), for: .touchUpInside)
+        tryComputer?.equallyButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
     }
 
     @objc private func buttonTapped() {
-        tryPerson?.computerNumber = tryPerson!.computerNumber + Int.random(in: 1...15)
-        tryPerson!.youNumberLabel.text = "Your number is - \(tryPerson?.computerNumber ?? 0)?"
+        tryComputer?.computerNumber = tryComputer!.computerNumber + Int.random(in: 1...15)
+        tryComputer!.youNumberLabel.text = "Your number is - \(tryComputer?.computerNumber ?? 0)?"
     }
 
     @objc private func buttonPassed() {
-        tryPerson?.computerNumber = tryPerson!.computerNumber - Int.random(in: 1...15)
-        tryPerson!.youNumberLabel.text = "Your number is - \(tryPerson?.computerNumber ?? 0)?"
+        tryComputer?.computerNumber = tryComputer!.computerNumber - Int.random(in: 1...15)
+        tryComputer!.youNumberLabel.text = "Your number is - \(tryComputer?.computerNumber ?? 0)?"
     }
 
     @objc private func buttonPressed() {
-        if tryPerson?.computerNumber == EnterNumberViewController.personNumber {
-            tryPerson?.myNumberLabel.text = "My number is \(tryPerson?.computerNumber ?? 0)"
+        if tryComputer?.computerNumber == EnterNumberViewController.personNumber {
+            tryComputer?.myNumberLabel.text = "My number is \(tryComputer?.computerNumber ?? 0)"
+            let viewcontroller = PersonIsGuessingViewController()
+            navigationController?.pushViewController(viewcontroller, animated: true)
         }
     }
 }
