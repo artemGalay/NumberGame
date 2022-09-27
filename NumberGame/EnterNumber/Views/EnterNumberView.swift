@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EnterNumberView: UIView {
+final class EnterNumberView: UIView {
 
     lazy var numberTexfield: UITextField = {
         let textfield = UITextField()
