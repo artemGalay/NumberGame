@@ -34,10 +34,10 @@ final class EnterNumberViewController: UIViewController {
         }
 
     @objc private func buttonPressed() {
-                let viewcontroller = ComputerIsGuessingViewController()
-                navigationController?.pushViewController(viewcontroller, animated: true)
+        let viewcontroller = ComputerIsGuessingViewController()
+        navigationController?.pushViewController(viewcontroller, animated: true)
     }
-    }
+}
 
 extension EnterNumberViewController: UITextFieldDelegate {
 
@@ -49,11 +49,4 @@ extension EnterNumberViewController: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return string == string.filter("0123456789".contains)
     }
-
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        if textField == startView?.numberTexfield {
-//            personNumber = (startView?.numberTexfield.text)!
-//            print("personNumber = \(personNumber)")
-//           }
-//       }
 }
