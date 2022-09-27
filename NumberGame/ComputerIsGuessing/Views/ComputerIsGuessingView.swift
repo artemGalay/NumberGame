@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ComputerIsGuessingView: UIView {
+final class ComputerIsGuessingView: UIView {
 
     var computerNumber = Int.random(in: 1...100)
 

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class EnterNumberViewController: UIViewController {
+final class EnterNumberViewController: UIViewController {
 
     static var personNumber: Int = 0
 

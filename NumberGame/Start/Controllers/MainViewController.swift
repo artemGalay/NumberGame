@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     private var startView: MainView? {
         guard isViewLoaded else { return nil }

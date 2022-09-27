@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MainView: UIView {
+final class MainView: UIView {
 
     private lazy var myGameLabel = UILabel(text: "My Awesome Game")
 
