@@ -10,11 +10,11 @@ import SnapKit
 
 final class ComputerIsGuessingView: UIView {
 
-    var computerNumber = Int.random(in: 1...100)
+    static var computerNumber = Int.random(in: 1...100)
 
     lazy var tryLabel = UILabel(text: "Try № 1")
     lazy var guessingLabel = UILabel(text: "Computer is guessing")
-    lazy var youNumberLabel = UILabel(text: "Your number is - \(computerNumber) ?")
+    lazy var youNumberLabel = UILabel(text: "Your number is - \(ComputerIsGuessingView.computerNumber) ?")
     lazy var myNumberLabel = UILabel(text: "My number is...")
 
     lazy var moreButton = UIButton(text: ">")

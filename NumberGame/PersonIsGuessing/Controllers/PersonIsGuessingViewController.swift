@@ -9,7 +9,7 @@ import UIKit
 
 final class PersonIsGuessingViewController: UIViewController {
 
-    var personNumber: Int = 0
+    static var personCount = 0
 
     private var tryPerson: PersonIsGuessingView? {
         guard isViewLoaded else { return nil }
@@ -29,18 +29,21 @@ final class PersonIsGuessingViewController: UIViewController {
 
     }
     @objc private func buttonTapped() {
-        //        personNumber = Int((tryPerson?.answerTexfield.text!)!)!
-        print("\(tryPerson?.computerNumber ?? 0) = \(EnterNumberViewController.personNumber)")
+        print("\(PersonIsGuessingView.computerNumber) = \(EnterNumberViewController.personNumber)")
     }
 
     @objc private func buttonPressed() {
 
-        if tryPerson!.computerNumber < Int((tryPerson?.answerTexfield.text!)!) ?? 0 {
+        if PersonIsGuessingView.computerNumber < Int((tryPerson?.answerTexfield.text!)!) ?? 0 {
+            PersonIsGuessingViewController.personCount += 1
             tryPerson?.myNumberLabel.text = "No, my number is less than yours"
 
-        } else if tryPerson!.computerNumber > Int((tryPerson?.answerTexfield.text!)!) ?? 0 {
+        } else if PersonIsGuessingView.computerNumber > Int((tryPerson?.answerTexfield.text!)!) ?? 0 {
+            PersonIsGuessingViewController.personCount += 1
             tryPerson?.myNumberLabel.text = "No, my number is more than yours"
         } else {
+            let viewcontroller = ScoresViewController()
+            navigationController?.pushViewController(viewcontroller, animated: true)
             print("success")
         }
     }

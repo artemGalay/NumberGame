@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        let viewcontroller = PersonIsGuessingViewController()
+        let viewcontroller = MainViewController()
         let navigationcontroller = UINavigationController(rootViewController: viewcontroller)
         window?.rootViewController = navigationcontroller
         window?.makeKeyAndVisible()

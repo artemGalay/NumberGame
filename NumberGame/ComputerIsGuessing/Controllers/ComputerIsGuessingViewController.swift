@@ -9,6 +9,8 @@ import UIKit
 
 final class ComputerIsGuessingViewController: UIViewController {
 
+    static var computerCount = 0
+
     private var tryComputer: ComputerIsGuessingView? {
         guard isViewLoaded else { return nil }
         return view as? ComputerIsGuessingView
@@ -27,18 +29,22 @@ final class ComputerIsGuessingViewController: UIViewController {
     }
 
     @objc private func buttonTapped() {
-        tryComputer?.computerNumber = tryComputer!.computerNumber + Int.random(in: 1...15)
-        tryComputer!.youNumberLabel.text = "Your number is - \(tryComputer?.computerNumber ?? 0)?"
+        ComputerIsGuessingViewController.computerCount += 1
+        print(ComputerIsGuessingViewController.computerCount)
+        PersonIsGuessingView.computerNumber = PersonIsGuessingView.computerNumber + Int.random(in: 1...15)
+        tryComputer?.youNumberLabel.text = "Your number is - \(PersonIsGuessingView.computerNumber)?"
     }
 
     @objc private func buttonPassed() {
-        tryComputer?.computerNumber = tryComputer!.computerNumber - Int.random(in: 1...15)
-        tryComputer!.youNumberLabel.text = "Your number is - \(tryComputer?.computerNumber ?? 0)?"
+        ComputerIsGuessingViewController.computerCount += 1
+        print(ComputerIsGuessingViewController.computerCount)
+        PersonIsGuessingView.computerNumber = PersonIsGuessingView.computerNumber - Int.random(in: 1...15)
+        tryComputer!.youNumberLabel.text = "Your number is - \(PersonIsGuessingView.computerNumber)?"
     }
 
     @objc private func buttonPressed() {
-        if tryComputer?.computerNumber == EnterNumberViewController.personNumber {
-            tryComputer?.myNumberLabel.text = "My number is \(tryComputer?.computerNumber ?? 0)"
+        if PersonIsGuessingView.computerNumber == EnterNumberViewController.personNumber {
+            tryComputer?.myNumberLabel.text = "My number is \(PersonIsGuessingView.computerNumber)"
             let viewcontroller = PersonIsGuessingViewController()
             navigationController?.pushViewController(viewcontroller, animated: true)
         }
