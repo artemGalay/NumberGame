@@ -9,7 +9,7 @@ import UIKit
 
 final class PersonIsGuessingView: UIView {
 
-    var computerNumber = Int.random(in: 1...100)
+    static var computerNumber = Int.random(in: 1...100)
 
     lazy var answerTexfield: UITextField = {
         let textfield = UITextField()
